@@ -1,0 +1,24 @@
+:root {
+  --accent-color: #B3B3B3;
+  --accent-font: 'STIX Two Text';
+  --bg-color: #F3EFEC;
+  --main-font: Raleway;
+  --text-color: #312A4E;
+}
+
+.page {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--main-font), sans-serif;
+}
+
+.heading {
+  font-family: var(--accent-font), serif;
+  line-height: 90%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.content-section {
+  padding: 0 5vw;
+}
