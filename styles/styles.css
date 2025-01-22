@@ -10,6 +10,10 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--main-font), sans-serif;
+}g
+
+.header {
+  padding-top: 10vw;
 }
 
 .heading {
@@ -21,4 +25,15 @@
 
 .content-section {
   padding: 0 5vw;
+}
+
+.header-title {
+  font-size: clamp(3.75rem, 2.5rem + 6.1728vw, 7.5rem);
+  margin-bottom: 40px;
+}
+
+.content__title {
+  font-size: 30px;
+  margin-top: 7vw;
+  margin-bottom: 2.5vw;
 }
