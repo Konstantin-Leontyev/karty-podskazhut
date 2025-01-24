@@ -9,10 +9,10 @@
 }
 
 .theme_dark {
+  --accent-color: transparent;
   --bg-color: #171717;
   --text-color: #B3B3B3;
   --text-underline-hover-color: #B3B3B3;
-  --accent-color: transparent;
   --marker: url('../images/marker-dark.svg');
 }
 
@@ -71,9 +71,9 @@
 
 .header__theme-button:hover {
   text-decoration: underline;
+  text-decoration-color: var(--text-underline-hover-color);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-  text-decoration-color: var(--text-underline-hover-color);
 }
 
 .header__theme-button_type_dark {
@@ -124,8 +124,8 @@
 
 .theme_dark .content__text-block_type_first-lettered .content__paragraph:first-of-type:first-letter {
   display: inline-block;
-  border: 1px solid currentColor;
   background-color: var(--accent-color);
+  border: 1px solid currentColor;
   font-size: 30px;
   margin-right: 5px;
   margin-left: -4px;
@@ -157,9 +157,9 @@
 
 .content__blockquote {
   font-style: italic;
-  width: 75%;
   line-height: 200%;
   margin: 29px auto 1.5em;
+  width: 75%;
 }
 
 .content__link {
@@ -173,14 +173,14 @@
 }
 
 .content__card {
-  border: 1px solid currentColor; 
-  margin-top: 7%;
-  text-align: center;
+  align-items: center;
   aspect-ratio: 4 / 3;
+  border: 1px solid currentColor; 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin-top: 7%;
+  text-align: center;
 }
 
 .content__card-title {
@@ -197,8 +197,8 @@
   content: '';
   background-color: var(--accent-color);
   position: absolute;
-  inset: 0.54em -0.07em;
   height: 0.25em;
+  inset: 0.54em -0.07em;
   z-index: -1;
 }
 
@@ -206,8 +206,8 @@
   content: '';
   background: url(../images/pattern.svg);
   position: absolute;
-  inset: 0.54em -0.07em;
   height: 0.25em;
+  inset: 0.54em -0.07em;
   z-index: -1;
 }
 
@@ -224,14 +224,14 @@
 }
 
 .content__list-item::before {
+  background: var(--marker) no-repeat center / cover;
+  block-size: 15px;
   content: '';
   display: inline-block;
   inline-size: 15px;
-  block-size: 15px;
-  position: absolute;
   inset-inline-start: -25px;
   inset-block-start: calc(100% / 2 - 7.5px);
-  background: var(--marker) no-repeat center / cover;
+  position: absolute;
 }
 
 .footer {
