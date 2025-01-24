@@ -70,18 +70,11 @@
 }
 
 .header__theme-button:hover {
+  cursor: pointer;
   text-decoration: underline;
   text-decoration-color: var(--text-underline-hover-color);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-}
-
-.header__theme-button_type_dark {
-  cursor: pointer;
-}
-
-.header__theme-button_type_light {
-  cursor: pointer;
 }
 
 .header__theme-button_is-active {
@@ -224,13 +217,15 @@
 }
 
 .content__list-item::before {
+  --size: 15px;
+  
   background: var(--marker) no-repeat center / cover;
-  block-size: 15px;
+  block-size: var(--size);
   content: '';
   display: inline-block;
-  inline-size: 15px;
+  inline-size: var(--size);
   inset-inline-start: -25px;
-  inset-block-start: calc(100% / 2 - 7.5px);
+  inset-block-start: calc(100% / 2 - var(--size) / 2);
   position: absolute;
 }
 
