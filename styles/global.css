@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .page {
@@ -9,14 +11,31 @@
   margin: 0;
 }
 
-p,
+blockquote,
+button,
+figure
 h1,
 h2,
 h3,
-blockquote,
-ul,
-ol,
 li,
-figure {
+ol,
+p,
+ul {
   margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  border: 1px solid currentColor;
+  padding: 2px;
 }
