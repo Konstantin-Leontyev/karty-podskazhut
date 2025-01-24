@@ -36,6 +36,6 @@ button:focus {
 
 a:focus-visible,
 button:focus-visible {
-  border: 1px solid currentColor;
+  outline: 1px solid currentColor;
   padding: 2px;
 }
